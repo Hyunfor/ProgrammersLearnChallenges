@@ -17,12 +17,19 @@ package Lv0;
 	num1이 100이고 num2가 2이므로 100 + 2 = 102를 return합니다.
  * 
  * */
-
 public class SumOfTwoNumbers {
-	
-	public int solution(int num1, int num2) {
-        int answer = -1;
-        return answer;
+
+	public static void main(String[] args) {
+        Solution calculator = new Solution();
+        int result = calculator.solution(3, 4);
+        System.out.println("Result: " + result);
     }
 
+}
+
+class Solution {
+    public int solution(int num1, int num2) {
+        int answer = num1 + num2;
+        return answer;
+    }
 }
